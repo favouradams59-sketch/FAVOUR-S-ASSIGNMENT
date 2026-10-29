@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Favour Adams</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">Favour Adams</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-page">
+        <header class="contact-heading">
+            <h1>Contact Me</h1>
+            <p>Have a question or want to connect? Send me a message.</p>
+        </header>
+
+        <section class="contact-container">
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Full Name</label>
+                    <input type="text" id="contact-name"
+                           placeholder="Enter your full name" required>
+                    <small class="error-message" id="name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email"
+                           placeholder="example@email.com" required>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-phone">Phone Number</label>
+                    <input type="tel" id="contact-phone"
+                           placeholder="Enter digits only"
+                           inputmode="numeric" required>
+                    <small class="error-message" id="phone-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                    <small class="error-message" id="message-error"></small>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="contact-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Favour Adams. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
